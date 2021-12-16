@@ -1,0 +1,74 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img src="index.jpg" alt="The Girl With The Gifts" width="500" height="333">
+    </div>
+    <div class="col">
+        <h3>The Girl With The Gifts</h3>
+        <p class="lead">By MR Carey</p>
+        <div>
+            {%- if status == 'Available' -%}
+            <span class="badge badge-success">Available</span>
+            {%- elif status == 'Issued' -%}
+            <span class="badge badge-primary">Issued</span>
+            {%- endif -%}
+        </div>
+        <div class="mt-4">
+            <div>Publisher: <strong>Orbit</strong></div>
+            <div>ISBN: <strong>435777</strong></div>
+        </div>
+       
+    </div>
+</div>
+
+
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img src="index3.jpeg" alt="Catch 22">
+    </div>
+    <div class="col">
+        <h3>Catch 22</h3>
+        <p class="lead">By  Joseph Heller</p>
+        <div>
+            {%- if status == 'Available' -%}
+            <span class="badge badge-success">Available</span>
+            {%- elif status == 'Issued' -%}
+            <span class="badge badge-primary">Issued</span>
+            {%- endif -%}
+        </div>
+        <div class="mt-4">
+            <div>Publisher: <strong>Simon & Schuster</strong></div>
+            <div>ISBN: <strong>43567</strong></div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img src="index2.jpeg" alt="Rework">
+    </div>
+    <div class="col">
+        <h3>Rework</h3>
+        <p class="lead">By DHH and jason fried</p>
+        <div>
+            {%- if status == 'Available' -%}
+            <span class="badge badge-success">Available</span>
+            {%- elif status == 'Issued' -%}
+            <span class="badge badge-primary">Issued</span>
+            {%- endif -%}
+        </div>
+        <div class="mt-4">
+            <div>Publisher: <strong>DHH and jason fried</strong></div>
+            <div>ISBN: <strong>876521</strong></div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
+
+
+<!-- this is a sample default web page template -->
